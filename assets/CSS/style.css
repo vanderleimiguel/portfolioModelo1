@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;1,400&display=swap');
+
+/*CSS do Portifolio*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto Mono, Arial, Helvetica, sans-serif;
+  color: #c0e90c;
+}
+
+/*  ***************************************************************************** */
+/*Estilização menu de navegação */
+nav#nav-bar{
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0e0e2b;
+  padding: 0px 5%;
+  box-shadow: 2px 2px 12px #c0e90c;
+  position: fixed;
+}
+
+ul#menu{
+  display: flex;
+  list-style: none;
+}
+
+/* Itens do menu */
+ul#menu li a{
+  display: flex;
+  margin:1rem; 
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: .2s ease-in-out;
+  text-decoration: none;
+  }
+
+ul#menu li a:hover{
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+/*  ***************************************************************************** */
+/*estilo da imagem de fundo do home*/
+header.header{
+  background-image: url(/Projeto1_Portifolio/assets/images/programador.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-color: #0e0e2b;
+}
+
+/*  ***************************************************************************** */
+/*estilo do texto do Home*/
+section#home h1{
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  padding-top: 8rem;
+  margin-left: 2rem;
+}
+
+section#home h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 2rem;
+}
+
+/*Links do inicio */
+section.button{
+  margin-top: 2rem;
+  display: flex;
+  height: 2.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-left: 3rem;
+  margin-top: 0;
+}
+
+section.button a{
+  text-decoration: none;
+  width: 2.5rem;
+  margin: 2rem;
+  padding: 1rem 4rem;
+  border-radius: 0.5rem;
+  border: 1px solid #c0e90c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s ease-in-out;
+}
+
+section.button a:hover{
+  color: #ffffff;
+}
+
+/*  ***************************************************************************** */
+/*estilo da seção Sobre*/
+section#about{
+  background-color: #0e0e2b;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  padding-top: 5rem;
+ }
+
+ section#about h2,p{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-left: 9rem;
+  margin-right: 9rem;
+ }
+
+/*links icones de contato*/
+ section#contact{
+  background-color: #0e0e2b;
+  padding-top: 5rem;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+ section#contact #link-icons{
+  display: flex;
+  justify-content: space-evenly;
+   }
+
+ div#link-icons img{
+  width: 20%;
+  margin: 2rem;
+ }
+ 
+ /*  ***************************************************************************** */
+/*estilo secao projetos*/
+section#project{
+  background-color: #0e0e2b;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+}
+
+section#cards{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  
+  
+  /* vai ocupar 100% o espaço que ele está */
+}
+
+.card{
+  width: 16rem;
+  height: 34rem;
+  margin: 2rem;
+  box-shadow: 0 0 1em #c0e90c;
+  border-radius: 0.3rem;
+  transition: transform .3s ease-in-out;
+  background-color: #4747bb;
+ }
+
+.card img{
+  width: 80%;
+  margin-bottom: 0.3rem;
+  /*centralizar imagem display e margin*/
+  display: flex;
+  margin: 0 auto;
+}
+
+.card h3{
+  font-size: 1.2rem;
+  margin: 1rem 0 1rem 0;
+  text-align: center;
+  
+}
+
+.card p{
+  font-size: 1.1rem;
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+a.btnProj{
+  color: #c0e90c;
+  text-decoration: none;
+  border: 1px solid #c0e90c;
+  font-size: 1.2rem;
+  width: 12rem;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  background-color: #0e0e2b;
+  justify-content: center ;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  border-radius: 1.2rem;
+  align-items: flex-end;
+}
+
+a.btnProj:hover{
+    color: #0e0e2b;
+    background-color: #c0e90c;
+    /* transform: scale(1.05); */
+    transition: all 0.3s;
+}
+
+
+/*  ***************************************************************************** */
+/*estilo secao tecnologias*/
+section#tecnology{
+  background-color: #0e0e2b;
+  text-align: center;
+  padding: 2rem;
+}
+
+section#tecnology #tech-icons{
+  display: flex;
+  justify-content: space-evenly;
+   }
+
+div#tech-icons img{
+  width: 5%;
+  margin:2rem;
+}
+
+/*  ***************************************************************************** */
+/*estilo footer*/
+footer{
+  background-color: #0e0e2b;
+  text-align: center;
+}
+ 
+
+ 
