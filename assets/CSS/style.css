@@ -7,7 +7,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: roboto Mono, Arial, Helvetica, sans-serif;
-  color: #c0e90c;
+  color: white;
+ 
 }
 
 body html{
@@ -23,10 +24,14 @@ nav#nav-bar{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #0e0e2b;
+  /* background-color: #0e0e2b; */
   padding: 0px 5%;
-  box-shadow: 2px 2px 12px #c0e90c;
+  box-shadow: 2px 2px 12px white;
   position: fixed;
+  background-image: url(/Projeto1_Portifolio/assets/images/back1.jpg);
+  /* background-size: contain; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
 }
 
 ul#menu{
@@ -45,7 +50,7 @@ ul#menu li a{
   }
 
 ul#menu li a:hover{
-  color: #ffffff;
+  color: white;
   transform: scale(1.1);
 }
 
@@ -53,22 +58,23 @@ ul#menu li a:hover{
 /*estilo da imagem de fundo do home*/
 section#home{
   background-color: #0e0e2b;
-  /* background-image: url(/Projeto1_Portifolio/assets/images/programador.png);
+   background-image: url(/Projeto1_Portifolio/assets/images/back1.jpg);
   background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat; */
-  height: 100vh;
-  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 113vh;
+  width: 110%;
   display: flex;
+  
 }
 
 div img#imagem{
   display: flex;
-  width: 50%;
-  margin-top:6rem;
+  width: 30%;
+  margin-top:8rem;
   margin-left: 10rem;
-background-color: #4747bb;
-box-shadow: 0 0 1em #c0e90c;
+  background-color: #4747bb;
+  box-shadow: 0 0 1em white;
 }
 
 /*  ***************************************************************************** */
@@ -107,14 +113,16 @@ section.button a{
   margin: 2rem;
   padding: 1rem 4rem;
   border-radius: 0.5rem;
-  border: 1px solid #c0e90c;
+  border: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: .3s ease-in-out;
+  background-color: #0e0e2b80;
 }
 
 section.button a:hover{
+  
   color: #ffffff;
   transform: scale(1.1);
 }
@@ -122,11 +130,14 @@ section.button a:hover{
 /*  ***************************************************************************** */
 /*estilo da seção Sobre*/
 section#about{
-  padding-top: 3rem;
-  background-color: #0e0e2b;
+  padding-top: 2rem;
+  background: rgb(38,13,35);
+  background: linear-gradient(180deg, rgba(38,13,35,1) 0%, rgba(14,14,43,1) 50%, rgba(14,14,43,1) 100%);
   text-align: center;
   width: 100%;
-  align-items: center;
+  
+  /* align-items: center; */
+  
  }
 
  section#about h2{
@@ -189,10 +200,10 @@ section#cards{
   width: 16rem;
   height: 26rem;
   margin: 2rem;
-  box-shadow: 0 0 1em #c0e90c;
+  box-shadow: 0 0 1em white;
   border-radius: 0.3rem;
   transition: transform .3s ease-in-out;
-  background-color: #4747bb;
+  background-color: white;
  }
 
 .card img{
@@ -207,13 +218,14 @@ section#cards{
   font-size: 1.2rem;
   margin: 1rem 0 1rem 0;
   text-align: center;
+  color: #0e0e2b;
   
 }
 
 .card p{
   font-size: 1.1rem;
   display: flex;
-  text-align: justify;
+  /* text-align: justify; */
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -221,12 +233,14 @@ section#cards{
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  color: #0e0e2b;
+  /* background-color: black; */
 }
 
 a.btnProj{
-  color: #c0e90c;
+  color: white;
   text-decoration: none;
-  border: 1px solid #c0e90c;
+  border: 1px solid white;
   font-size: 1.2rem;
   width: 12rem;
   height: auto;
@@ -238,6 +252,8 @@ a.btnProj{
   transition: all .2s ease-in-out;
   border-radius: 1.2rem;
   align-items: flex-end;
+  /* padding-top: 1rem; */
+  /* position: relative; */
 }
 
 a.btnProj:hover{
@@ -272,6 +288,7 @@ div#tech-icons img{
 footer{
   background-color: #0e0e2b;
   text-align: center;
+  font-size: 0.8rem;
 }
  
 
