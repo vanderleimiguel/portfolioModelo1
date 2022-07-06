@@ -10,6 +10,11 @@
   color: #c0e90c;
 }
 
+body html{
+  width: 100%;
+  height: 100vh;
+}
+
 /*  ***************************************************************************** */
 /*Estilização menu de navegação */
 nav#nav-bar{
@@ -41,19 +46,29 @@ ul#menu li a{
 
 ul#menu li a:hover{
   color: #ffffff;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /*  ***************************************************************************** */
 /*estilo da imagem de fundo do home*/
-header.header{
-  background-image: url(/Projeto1_Portifolio/assets/images/programador.png);
+section#home{
+  background-color: #0e0e2b;
+  /* background-image: url(/Projeto1_Portifolio/assets/images/programador.png);
   background-size: contain;
   background-position: right;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   height: 100vh;
   width: 100%;
-  background-color: #0e0e2b;
+  display: flex;
+}
+
+div img#imagem{
+  display: flex;
+  width: 50%;
+  margin-top:6rem;
+  margin-left: 10rem;
+background-color: #4747bb;
+box-shadow: 0 0 1em #c0e90c;
 }
 
 /*  ***************************************************************************** */
@@ -87,7 +102,8 @@ section.button{
 
 section.button a{
   text-decoration: none;
-  width: 2.5rem;
+  text-align:center;
+  width: 12rem;
   margin: 2rem;
   padding: 1rem 4rem;
   border-radius: 0.5rem;
@@ -100,16 +116,21 @@ section.button a{
 
 section.button a:hover{
   color: #ffffff;
+  transform: scale(1.1);
 }
 
 /*  ***************************************************************************** */
 /*estilo da seção Sobre*/
 section#about{
+  padding-top: 3rem;
   background-color: #0e0e2b;
   text-align: center;
   width: 100%;
   align-items: center;
-  padding-top: 5rem;
+ }
+
+ section#about h2{
+  padding-bottom: 2rem;
  }
 
  section#about h2,p{
@@ -124,7 +145,7 @@ section#about{
   background-color: #0e0e2b;
   padding-top: 5rem;
   text-align: center;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 
  section#contact #link-icons{
@@ -135,11 +156,19 @@ section#about{
  div#link-icons img{
   width: 20%;
   margin: 2rem;
+  transition: transform .3s ease-in-out;
  }
+
+ div#link-icons img:hover{
+
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
  
  /*  ***************************************************************************** */
 /*estilo secao projetos*/
 section#project{
+  padding-top: 3rem;
   background-color: #0e0e2b;
   text-align: center;
   width: 100%;
@@ -150,14 +179,15 @@ section#cards{
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  
-  
-  /* vai ocupar 100% o espaço que ele está */
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .card{
   width: 16rem;
-  height: 34rem;
+  height: 26rem;
   margin: 2rem;
   box-shadow: 0 0 1em #c0e90c;
   border-radius: 0.3rem;
@@ -189,6 +219,8 @@ section#cards{
   margin: 0 auto;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 a.btnProj{
@@ -209,9 +241,9 @@ a.btnProj{
 }
 
 a.btnProj:hover{
-    color: #0e0e2b;
-    background-color: #c0e90c;
-    /* transform: scale(1.05); */
+    color: white;
+    /* background-color: #c0e90c; */
+    transform: scale(1.1);
     transition: all 0.3s;
 }
 
@@ -232,6 +264,7 @@ section#tecnology #tech-icons{
 div#tech-icons img{
   width: 5%;
   margin:2rem;
+  
 }
 
 /*  ***************************************************************************** */
