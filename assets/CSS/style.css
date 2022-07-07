@@ -8,8 +8,7 @@
   box-sizing: border-box;
   font-family: roboto Mono, Arial, Helvetica, sans-serif;
   color: white;
- 
-}
+ }
 
 body html{
   width: 100%;
@@ -18,20 +17,19 @@ body html{
 
 /*  ***************************************************************************** */
 /*Estilização menu de navegação */
-nav#nav-bar{
+nav#nav{
+  background-image: url(/assets/images/back1.jpg);
+
   width: 100%;
   height: 3rem;
+  padding: 0px 5%;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: #0e0e2b; */
-  padding: 0px 5%;
-  box-shadow: 2px 2px 12px white;
   position: fixed;
-  background-image: url(/Projeto1_Portifolio/assets/images/back1.jpg);
-  /* background-size: contain; */
-  /* background-position: center; */
-  /* background-repeat: no-repeat; */
+
+  box-shadow: 2px 2px 12px white;
 }
 
 ul#menu{
@@ -39,7 +37,13 @@ ul#menu{
   list-style: none;
 }
 
-/* Itens do menu */
+nav a.logo {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 ul#menu li a{
   display: flex;
   margin:1rem; 
@@ -58,14 +62,13 @@ ul#menu li a:hover{
 /*estilo da imagem de fundo do home*/
 section#home{
   background-color: #0e0e2b;
-   background-image: url(/Projeto1_Portifolio/assets/images/back1.jpg);
-  background-size: contain;
+  background-image: url(/assets/images/back1.jpg);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 113vh;
-  width: 110%;
+  height: 100vh;
+  width: 100%;
   display: flex;
-  
 }
 
 div img#imagem{
@@ -162,6 +165,7 @@ section#about{
  section#contact #link-icons{
   display: flex;
   justify-content: space-evenly;
+  
    }
 
  div#link-icons img{
@@ -275,12 +279,12 @@ section#tecnology{
 section#tecnology #tech-icons{
   display: flex;
   justify-content: space-evenly;
-   }
+  flex-wrap: wrap;
+}
 
 div#tech-icons img{
-  width: 5%;
+  width: 4rem;
   margin:2rem;
-  
 }
 
 /*  ***************************************************************************** */
@@ -291,5 +295,32 @@ footer{
   font-size: 0.8rem;
 }
  
+/********************************************************************************/
+/* mediaquery */
+@media screen and (max-width: 800px){
+  div img#imagem{
+    display: none;
+  }
+
+  section#about h2,p{
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-right:2rem;
+  }
+
+  div#link-icons img{
+    width: 30%;
+  }
+
+  div#tech-icons img{
+    width: 10%;
+    margin:2rem;
+  }
+
+  footer{
+    font-size: 0.5rem;
+  }
+  }
+
 
  
