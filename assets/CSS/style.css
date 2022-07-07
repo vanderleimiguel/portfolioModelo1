@@ -110,7 +110,7 @@ section.button{
   height: 2.5rem;
   font-weight: bold;
   font-size: 0.9rem;
-  margin-left: 3rem;
+  margin-left: 2.5rem;
   margin-top: 0;
 }
 
@@ -143,7 +143,7 @@ section#about{
   background: rgb(38,13,35);
   background: linear-gradient(180deg, rgba(38,13,35,1) 0%, rgba(14,14,43,1) 50%, rgba(14,14,43,1) 100%);
 
-  padding-top: 2rem;
+  padding-top: 3rem;
   text-align: center;
 }
 
@@ -369,7 +369,25 @@ footer{
   footer{
     font-size: 0.5rem;
   }
+}
+
+@media (max-width: 650px){
+
+  section#home h1{
+    text-align: center;
+    font-size: 2rem;
   }
-
-
+    
+  section#home h2{
+    text-align: center;
+    font-size: 1rem;
+  }
+    
+    
+  section.button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
  
