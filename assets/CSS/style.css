@@ -18,7 +18,7 @@ body html{
 /*  ***************************************************************************** */
 /*Estilização menu de navegação */
 nav#nav{
-  background-image: url(/assets/images/back1.jpg);
+  background-image: url(../images/back1.jpg);
 
   width: 100%;
   height: 3rem;
